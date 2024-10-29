@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergei May Cry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="game-title">Sergei May Cry</div>
+        <div class="image-container">
+            <div class="overlay"></div> <!-- Затемнение -->
+            <img src="mainimg.png" alt="Header Game Image">
+        </div>
+    </div>
+    <div class="orange-background">
+        <div class="image-container">
+            <div class="overlay"></div> <!-- Затемнение -->
+            <img src="img2.webp" alt="Content Game Image">
+        </div>
+        <div class="content">
+            <p>Итак, здравствуйте. Вы попали на страницу какого-то ебаната, который решил залить свою игрушку ходилку-бродилку на сей прекрасный сайт. Короче, вам ли не похер на моё вступление, перейдём к описанию данного проекта, который я оставлю бесплатным лишь в качестве показателя своей благодетели.</p>
+            <div class="images">
+                <img src="Жопа.png" alt="Image 1">
+                <img src="Снимок экрана (48).png" alt="Image 2">
+            </div>
+            <p class = "game-text">Короче, Sergei May Cry - (экшен-новелла блять) сюжетное рпг с элементами игры, в которой главный герой отправляется в удивительный регион, похожий чем-то на Челябинск в лучшие годы, в котором ему предстоит выбить из одного мудозвона 50 дубликов, и впоследствии вернуть их своему ментору алкашу. В игре вы можете добиваться информации касательно местонахождения на определенной точке координат многих болванчиков, которых вы в любом случае убьёте (по приколу или нет мне не важно). Ну и понятное дело вас, игрока, ожидает приключение, в котором вы будете мутузить каких-то долбанавтов, похожих на моих друзей, всяких там боссов, ну и в конце вам придётся выбрать между пиками точенными... А вот суть главного вопрос в вашей жизни вы сможете понять (и простить) лишь поиграв сами. Игра высрется на свет maybe в ближе к лету 25 года, поскольку (вставьте сюда любое оправдание, какое вам больше всего нравится). Как-то так ¯\_(ツ)_/¯
+            </p>
+            <div class="download-link">
+            <a href="#" download>Скачать игру</a>
+        </div>
+        </div> 
+        <p class = "at-the-end">Наши контакты : yegereldia@gmail.com</p>
+    </div>
+<script>
+    window.addEventListener("scroll", function() {
+        const scrollPosition = window.pageYOffset;
+
+        // Параллакс-эффект для изображения в шапке
+        const headerImage = document.querySelector(".header .image-container img");
+        headerImage.style.transform = `translate(-50%, calc(-50% - ${scrollPosition * 0.3}px))`;
+
+        // Параллакс-эффект для фонового изображения в блоке с классом "orange-background"
+        const contentImage = document.querySelector(".orange-background .image-container img");
+        contentImage.style.transform = `translate(-50%, calc(-50% - ${scrollPosition * 0.3}px))`;
+    });
+</script>
+</body>
+</html>

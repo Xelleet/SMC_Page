@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название Игры</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="game-title">Sergei May Cry</div>
+        <div class="image-container">
+            <img src="mainimg.png" alt="Game Image">
+        </div>
+    </div>
+    <div class="content">
+        <p>Текст о вашей игре. Здесь можно разместить описание, интересные факты и так далее.</p>
+        <div class="images">
+            <img src="Жопа.png" alt="Image 1">
+            <img src="IDK.png" alt="Image 2">
+        </div>
+        <p>Дополнительный текст о игре.</p>
+    </div>
+    <div class="download-link">
+        <a href="download-link.zip" download>Скачать игру</a>
+    </div>
+</body>
+</html>
